@@ -41,13 +41,16 @@ body {font-family: "Lato", sans-serif;}
 .sidebar{
 display: none;
 }
-
+.phone{
+  display: none;
+}
 @media screen and (min-width: 665px)
 {
   .sidebar_a{
    display: none;
   }
 }
+
 
 @media screen and (max-width: 664px) {
   .sidebar{
@@ -56,5 +59,20 @@ display: none;
   .sidebar_a{
     background:none;
   }
+  
 }
-
+@media screen and (max-width: 464px) {
+  .sidebar{
+    display: none;
+  }
+  .sidebar_a{
+    background:none;
+  }
+  .phone{
+    display: block;
+  }
+  .phone_text{
+    padding: 0px;
+    margin:0px;
+  }
+}
